@@ -1,0 +1,294 @@
+@font-face {
+  font-family: Haas;
+  src: url(./NeueHaasDisplayBlack.ttf);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: Haas;
+   
+  }
+  html,body{
+    height: 100%;
+    width: 100%;
+  }
+  #page1{
+    min-height:  100vh;
+    width: 100%;
+    background-color: #EFE9E3;
+    position: relative;
+    padding: 0 2vw;
+  }
+  #nav{
+    padding: 2vw 2vw;
+    width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+  }
+  .nave2{
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+  }
+  .nave2 h4{
+    padding: 10px 20px;
+    border: 1px solid rgba(176, 175, 175, 0.809);
+    border-radius: 50px;
+    font-weight: 500;
+    font-size: 18px;
+    font-family: gilroy;
+     transition: all ease o.4s;
+    position: relative;
+   
+    overflow: hidden;
+  }
+  .nave2 h4::after{
+    content: ""; 
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    left: 0;
+    bottom: -100%;
+    border-radius: 50%;
+    transition: all ease 0.6s;  
+
+
+  }
+  .nave2 h4:hover::after{
+    bottom: 0;
+    border-radius: 0;
+  }
+  .nave2 h4 a{
+    text-decoration: none;
+    color: black;
+    
+    position: relative;
+    z-index: 9;
+  }
+  .nave2 h4:hover a{
+    color: white;
+  }
+
+  #centre{
+    height: 65vh;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    border-bottom: 1px solid #0000003c;
+    padding-bottom: 2.5vw;
+  }
+  #left h3{
+    width: 25vw;
+    font-size: 1.8vw;
+    line-height: 2vw;
+  }
+#right h1{
+    font-size: 10vw;
+    line-height: 8vw;
+    text-align: right;
+  }
+
+  #page1 video{
+    border-radius: 30px;
+    margin: 1vw;
+    width: 100%;
+    position: relative;
+  }
+  #hero{
+    position: absolute;
+     height: 36vw;
+    width: 46vw;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    right: 0;
+    top: 75vh;
+
+  
+  }
+  #hero #hero1{
+    height: 100%;
+    width: 100%;
+    background-color: #FE3C0E;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    filter: blur(15px);
+    position: absolute;
+
+  }
+ #hero #hero2{
+    height: 30vw;
+    width: 30vw;
+    background-color: #FE3C0E;
+    border-radius: 50%;
+    filter: blur(15px);
+    position: absolute;
+    animation-name: anime2;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  #hero #hero3{ 
+    height: 30vw;
+    width: 30vw;
+    background-color: linear-gradient(#FE3C0E,#ee340b);
+   border-radius: 50%;
+    filter: blur(15px);
+    position: absolute;
+    animation-name: anime1;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  @keyframes anime1 {
+    from{
+      transform: translate(30%,-30%);
+    }
+    to{
+      transform: translate(10%,30%);
+    }
+    
+  }
+  @keyframes anime2 {
+    from{
+      transform: translate(5%,-5%);
+    }
+    to{
+      transform: translate(-20%,30%);
+    }
+    
+  }
+  #page2{
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgb(229, 229, 229);
+    padding: 8vw 0;
+    position: relative;
+  }
+  .con{
+    white-space: nowrap;
+    display: inline-block;
+    animation-name: move;
+    animation-duration: 8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+  #moving h1{
+    font-size: 9vw;
+    display: inline-block;
+
+  }
+  #gola{
+    height: 35px;
+    width: 35px;border-radius: 50%;
+    background-color: #FE3C0E;
+    display: inline-block;
+    margin: 1vw 2vw;
+  }
+  #moving{
+    white-space: nowrap;
+    overflow-x: auto;
+  }
+  #moving::-webkit-scrollbar{
+    display: none;
+  }
+  @keyframes move {
+    from{
+      transform: translate(0);
+    }
+    to{
+      transform: translate(-100%);
+    }
+  }
+  #page2bottem{
+    height: 80vh;width: 100%;
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4vw;
+   position: relative;
+  
+
+  }
+  #page2bottem h1{
+  font-size: 3.5vw;
+  width: 50%;
+  line-height: 4vw;
+  z-index: 9;
+  }
+  #page2b2{
+    width: 20%;
+    
+  }
+#page2b2 img{
+width: 100%;
+border-radius: 15px;
+}
+  #page2b2 p{
+    font-weight: 100;
+    margin-top: 2vw;
+  }
+  #page2 #goy{
+    height: 30vw;
+    width: 30vw;position: absolute;
+    border-radius: 50%;
+    background: linear-gradient(to top,#FE3C0E,#fe760e);
+    top: 58%;
+    left: 25%;
+    filter: blur(20px);
+    animation-name: goy;
+    animation-duration: 4s;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+  @keyframes goy {
+    from{
+      transform: translate(10%,-10%)skew(0);
+    }
+    to{
+      transform: translate(-10%,-10%)skew(-12deg);
+    }
+  }
+  #page3{
+    min-height: 100vh;
+    width: 100%;
+    padding: 4vw 0;
+   
+  }
+  .elem{
+    height: 100px;
+    width: 100%;
+    border-bottom: 1px solid #544f4f77 ;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0 2vw;
+    overflow: hidden;
+  }
+  .elem h2{
+    font-size: 3.5vw;
+    position: relative;
+    z-index: 9;
+    
+  }
+.elem .over{
+height: 100%;
+width: 100%;
+background-color: orange;
+position: absolute;
+left: 0;
+top: -100%;
+transition: all ease 0.3s;
+}
+.elem:hover .over{
+  top: 0;
+}
